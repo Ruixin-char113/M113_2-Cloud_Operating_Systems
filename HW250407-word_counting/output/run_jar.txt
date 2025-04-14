@@ -1,0 +1,72 @@
+25/04/14 18:20:31 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+25/04/14 18:20:33 INFO input.FileInputFormat: Total input files to process : 1
+25/04/14 18:20:34 INFO mapreduce.JobSubmitter: number of splits:1
+25/04/14 18:20:35 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1744623022328_0005
+25/04/14 18:20:35 INFO conf.Configuration: resource-types.xml not found
+25/04/14 18:20:35 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+25/04/14 18:20:35 INFO resource.ResourceUtils: Adding resource type - name = memory-mb, units = Mi, type = COUNTABLE
+25/04/14 18:20:35 INFO resource.ResourceUtils: Adding resource type - name = vcores, units = , type = COUNTABLE
+25/04/14 18:20:35 INFO impl.YarnClientImpl: Submitted application application_1744623022328_0005
+25/04/14 18:20:36 INFO mapreduce.Job: The url to track the job: http://mnlab-rui:8088/proxy/application_1744623022328_0005/
+25/04/14 18:20:36 INFO mapreduce.Job: Running job: job_1744623022328_0005
+25/04/14 18:20:45 INFO mapreduce.Job: Job job_1744623022328_0005 running in uber mode : false
+25/04/14 18:20:45 INFO mapreduce.Job:  map 0% reduce 0%
+25/04/14 18:20:53 INFO mapreduce.Job:  map 100% reduce 0%
+25/04/14 18:21:00 INFO mapreduce.Job:  map 100% reduce 100%
+25/04/14 18:21:02 INFO mapreduce.Job: Job job_1744623022328_0005 completed successfully
+25/04/14 18:21:02 INFO mapreduce.Job: Counters: 49
+	File System Counters
+		FILE: Number of bytes read=1072387
+		FILE: Number of bytes written=2562271
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=6399465
+		HDFS: Number of bytes written=806311
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=5593
+		Total time spent by all reduces in occupied slots (ms)=4780
+		Total time spent by all map tasks (ms)=5593
+		Total time spent by all reduce tasks (ms)=4780
+		Total vcore-milliseconds taken by all map tasks=5593
+		Total vcore-milliseconds taken by all reduce tasks=4780
+		Total megabyte-milliseconds taken by all map tasks=5727232
+		Total megabyte-milliseconds taken by all reduce tasks=4894720
+	Map-Reduce Framework
+		Map input records=58663
+		Map output records=1107870
+		Map output bytes=10951571
+		Map output materialized bytes=1072387
+		Input split bytes=112
+		Combine input records=1107870
+		Combine output records=68985
+		Reduce input groups=68985
+		Reduce shuffle bytes=1072387
+		Reduce input records=68985
+		Reduce output records=68985
+		Spilled Records=137970
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=228
+		CPU time spent (ms)=7270
+		Physical memory (bytes) snapshot=520658944
+		Virtual memory (bytes) snapshot=3808047104
+		Total committed heap usage (bytes)=284688384
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=6399353
+	File Output Format Counters 
+		Bytes Written=806311
