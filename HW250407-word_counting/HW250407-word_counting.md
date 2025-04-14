@@ -44,7 +44,7 @@ hadoop fs -ls /
 ``` bash
 hadoop fs -copyFromLocal ./Desktop/Harry.txt /wordcount/input
 ```
-確認是否有放入:
+#### 確認是否有放入:
 ``` bash
 hadoop fs -ls /wordcount/input
 ```
@@ -66,20 +66,20 @@ hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.
 [完整內容](output/run_jar.txt)
 
 ### 察看結果
-確認是否有輸出:
+#### 確認是否有輸出:
 ``` bash
 hadoop fs -ls /wordcount/output/hw0407
 ```
-查看結果: (根據內容長度，終端機可能會截斷)
+#### 查看結果: (根據內容長度，終端機可能會截斷)
 ``` bash
 hadoop fs -cat /wordcount/output/hw0407/part-r-00000
 ```
-只取 head:
+#### 只取 head:
 ``` bash
 hadoop fs -cat /wordcount/output/hw0407/part-r-00000 2>/dev/null | head
 ```
 ![output: head](images/output_head.png "output head")
-儲存結果:
+#### 儲存結果:
 ``` bash
 hadoop fs -cat /wordcount/output/hw0407/part-r-00000 > ./Desktop/hw0407_output.txt
 ```
